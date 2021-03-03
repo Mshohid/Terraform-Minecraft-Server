@@ -81,7 +81,7 @@ resource "aws_security_group" "Minecraft_sg" {
 
 resource "aws_instance" "Minecraftserver" {
   ami = "ami-0ffd774e02309201f" 
-  instance_type = "t2.micro"
+  instance_type = "t2.medium"
   subnet_id = aws_subnet.My_Subnet.id
   availability_zone = "eu-west-2a"
   associate_public_ip_address = "true"
