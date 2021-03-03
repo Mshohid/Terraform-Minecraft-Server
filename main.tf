@@ -1,8 +1,9 @@
 provider "aws" {
   region     = "eu-west-2"
   access_key = "aws-access-key"
-  secret_key = "aws-secret-access-key" 
+  secret_key = "aws-secret-access-key"
 }
+
 
 resource "aws_vpc" "My_VPC" {
     cidr_block = "10.0.0.0/16"
@@ -87,7 +88,7 @@ resource "aws_instance" "Minecraftserver" {
   key_name = "minecraftserverkey"
   security_groups = [ aws_security_group.Minecraft_sg.id ] 
 
-  # user_data = "${file("userdata.sh")}"
+  user_data = file("userdata.sh")
   
   tags = {
         Name = "Minecraft Server"
