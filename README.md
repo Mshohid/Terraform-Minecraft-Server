@@ -30,6 +30,6 @@ The script itself will update the instance and install the (current) latest veri
 4. "wget <file link>" e.g "wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar"
 5. Use "ls" to list all the files in the directory. There should be a new file called server.jar
 6. Use "java -Xmx1024M -Xms1024M -jar [file_name].jar nogui" to start your server e.g "java -Xmx1024M -Xmx1024M -jar server.jar nogui" (This command is on the same page we downloaded our server file from)
-7. It will error. Thats ok! "vi" (Or the whichever preferred text editor) into eula.txt and on the 4th line change "eula=false" to "eula=true".
+7. It will error. Thats ok! "vi" (Or use your preferred text editor) into eula.txt and on the 4th line change "eula=false" to "eula=true".
 The server is now ready!
 8. Just open minecraft > click multiplayer > add server > enter the public ip address of your server.
